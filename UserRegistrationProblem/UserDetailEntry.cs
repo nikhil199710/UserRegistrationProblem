@@ -160,6 +160,7 @@ namespace UserRegistrationProblem
                 {
                     Console.WriteLine("The mobile no does not match specified condition");
                     Console.WriteLine("Please enter country code, followed by space and 10 digit mobile no");
+                    //Console.WriteLine("Please enter the mobile no again");
                     Console.WriteLine("Do you want to check again, press y to check");
                     string check = Console.ReadLine();
                     if (check.ToLower() != "y")
