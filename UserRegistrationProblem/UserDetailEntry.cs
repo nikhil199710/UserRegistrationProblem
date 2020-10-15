@@ -28,6 +28,7 @@ namespace UserRegistrationProblem
                 bool validationForUserName = userRegistration.FirstAndLastName(input);
                 if (validationForUserName)
                 {
+                    //user name matches with the pattern
                     Console.WriteLine($"The user name- {input} is valid");
                     Console.WriteLine("Do you want to check again, press y to check");
                     string check = Console.ReadLine();
@@ -40,6 +41,7 @@ namespace UserRegistrationProblem
                 {
                     Console.WriteLine("The name does not match specified condition");
                     Console.WriteLine("Please enter 1st alphabet as capital and min 3 alphabets");
+                    //Console.WriteLine("Please enter the user name again");
                     Console.WriteLine("Do you want to check again, press y to check");
                     string check = Console.ReadLine();
                     if (check.ToLower() != "y")
@@ -78,6 +80,7 @@ namespace UserRegistrationProblem
                 {
                     Console.WriteLine("The name does not match specified condition");
                     Console.WriteLine("Please enter 1st alphabet as capital and min 3 alphabets");
+                    //Console.WriteLine("Please enter the user name again");
                     Console.WriteLine("Do you want to check again, press y to check");
                     string check = Console.ReadLine();
                     if (check.ToLower() != "y")
@@ -119,6 +122,8 @@ namespace UserRegistrationProblem
                 {
                     Console.WriteLine("The name does not match specified condition");
                     Console.WriteLine("Please enter mail id in form of abc.xyz@mnop.com.in");
+                    //Console.WriteLine("Please enter the email again");
+                    //Console.WriteLine("Do you want to check again");
                     Console.WriteLine("Do you want to check again, press y to check");
                     string check = Console.ReadLine();
                     if (check.ToLower() != "y")
@@ -202,6 +207,7 @@ namespace UserRegistrationProblem
                 {
                     Console.WriteLine("The password does not match specified condition");
                     Console.WriteLine("Please enter country code, followed by space and 10 digit mobile no");
+                    //Console.WriteLine("Please enter the password again");
                     Console.WriteLine("Do you want to check again, press y to check");
                     string check = Console.ReadLine();
                     if (check.ToLower() != "y")
