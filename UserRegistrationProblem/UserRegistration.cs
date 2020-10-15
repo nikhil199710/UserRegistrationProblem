@@ -14,13 +14,11 @@ namespace UserRegistrationProblem
         }
         public bool Email(string input)
         {
-            //string emailPattern = @"^[a-z]{1}[a-z0-9]*([._]?[a-z0-9]+)*\@[a-z0-9]+\.(com|net)(\.[a-z]{2})?$";
             string emailPattern = @"^([a-z0-9A-Z])+([._+-]?[a-z0-9A-Z]+)*[@]{1}[a-z0-9A-Z]+[.]{1}[a-zA-Z]{3}([.]{1}[a-z]{2})?$";
             return Regex.IsMatch(input, emailPattern);
         }
         public bool MobileNo(string input)
         {
-            //string mobileNoPattern = @"\d{2}\s{1}[6-9]{1}\d{9}";
             string mobileNoPattern = @"^[1-9]{2}[ ]?[0-9]{10}$";
             return Regex.IsMatch(input, mobileNoPattern);
         }

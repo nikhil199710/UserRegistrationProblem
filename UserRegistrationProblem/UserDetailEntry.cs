@@ -6,6 +6,9 @@ namespace UserRegistrationProblem
 {
     class UserDetailsEntry
     {
+        /// <summary>
+        /// Takes input for first name and instatiates class to match with pattern.
+        /// </summary>
         public static void FirstName()
         {
             UserRegistration userRegistration = new UserRegistration();
@@ -15,6 +18,7 @@ namespace UserRegistrationProblem
                 string input = Console.ReadLine();
                 if (input == "")
                 {
+                    //no user name is entered
                     Console.WriteLine("No user name entered");
                     break;
 
@@ -36,7 +40,6 @@ namespace UserRegistrationProblem
                 {
                     Console.WriteLine("The name does not match specified condition");
                     Console.WriteLine("Please enter 1st alphabet as capital and min 3 alphabets");
-                    //Console.WriteLine("Please enter the user name again");
                     Console.WriteLine("Do you want to check again, press y to check");
                     string check = Console.ReadLine();
                     if (check.ToLower() != "y")
